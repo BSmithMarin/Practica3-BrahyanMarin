@@ -5,11 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.AreasVolumenes">
+    tools:context=".fragments.AreasVolumenes"
+    >
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#ffd740"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,8 +24,9 @@
 
             <EditText
                 android:id="@+id/etnRadioEsfera"
+                style="@style/EditText"
                 android:layout_width="252dp"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
                 android:ems="10"
@@ -34,6 +37,7 @@
 
             <TextView
                 android:id="@+id/textView"
+                style="@style/BlackText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
@@ -63,6 +67,7 @@
 
             <TextView
                 android:id="@+id/textView2"
+                style="@style/BlackText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
@@ -74,8 +79,9 @@
 
             <EditText
                 android:id="@+id/etnLadoCubo"
+                style="@style/EditText"
                 android:layout_width="248dp"
-                android:layout_height="44dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:ems="10"
@@ -104,6 +110,7 @@
 
             <TextView
                 android:id="@+id/textView3"
+                style="@style/BlackText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
@@ -115,13 +122,15 @@
 
             <EditText
                 android:id="@+id/etnLargoParalelepipedo"
+                style="@style/EditText"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:ems="10"
-                android:hint="largo"
+                android:hint="Largo"
                 android:inputType="numberDecimal"
+                android:minHeight="48dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -145,30 +154,35 @@
 
             <EditText
                 android:id="@+id/etnAnchoParalelepipedo"
+                style="@style/EditText"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:ems="10"
-                android:hint="ancho"
+                android:hint="Ancho"
                 android:inputType="numberDecimal"
+                android:minHeight="48dp"
                 app:layout_constraintStart_toEndOf="@+id/etnLargoParalelepipedo"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <EditText
                 android:id="@+id/etnAltoParalelepipedo"
+                style="@style/EditText"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:ems="10"
-                android:hint="alto"
+                android:hint="Alto"
                 android:inputType="numberDecimal"
+                android:minHeight="48dp"
                 app:layout_constraintStart_toEndOf="@+id/etnAnchoParalelepipedo"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <TextView
                 android:id="@+id/textView4"
+                style="@style/BlackText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
@@ -180,6 +194,7 @@
 
             <TextView
                 android:id="@+id/tvResultadoEsfera"
+                style="@style/BlackText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
@@ -191,6 +206,7 @@
 
             <TextView
                 android:id="@+id/textView6"
+                style="@style/BlackText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
@@ -202,6 +218,7 @@
 
             <TextView
                 android:id="@+id/tvResultadoCubo"
+                style="@style/BlackText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
@@ -212,6 +229,7 @@
 
             <TextView
                 android:id="@+id/textView8"
+                style="@style/BlackText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
@@ -223,6 +241,7 @@
 
             <TextView
                 android:id="@+id/tvResultadoParalelepipedo"
+                style="@style/BlackText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
