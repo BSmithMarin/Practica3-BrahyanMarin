@@ -60,12 +60,12 @@ public class navegadorWeb extends Fragment {
             @Override
             public void handleOnBackPressed() {
                 //Esta funcion gestiona la accion a realizar si se pulsa el boton de atras
-                //Si hay una web anterior se vuelve a ella, sino realizamos la funcion por defecto
-                //del boton volver, en este caso cerrar la aplicacion y volver al escritorio
+                //Si hay una web anterior se vuelve a ella, sino finalizamos la actividad anfitriona
+                //Y por ende los dos fragmentos alojados en ella
                 if ( browser.canGoBack() ){
                     browser.goBack();
                 }else{
-                    requireActivity().onBackPressed();
+                    requireActivity().finish();
                 }
             }
         };
