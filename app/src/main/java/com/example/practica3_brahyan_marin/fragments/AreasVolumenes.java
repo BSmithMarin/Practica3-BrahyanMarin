@@ -108,10 +108,12 @@ public class AreasVolumenes extends Fragment implements View.OnClickListener{
                     resultado = (4.0/3.0)*Math.PI*Math.pow(radioEsfera,3);
                 }
 
-                //Si no han saltado excepciones, se muestra el resultado el textViev con 4 decimales
+                //Si no han saltado excepciones, se muestra el resultado el textViev con 3 decimales
                 //de precision
-                tvResultadoEsfera.setText( String.format( "%,.4f", resultado) );
+                tvResultadoEsfera.setText( String.format( "%,.3f", resultado) );
             }catch (Exception e){
+                //Se borra el resultado anterior si lo hubiese para que no induzca a error
+                tvResultadoEsfera.setText("");
                 toastPersonalizado("El radio de la esfera debe ser un número mayor que 0");
             }
 
@@ -132,9 +134,11 @@ public class AreasVolumenes extends Fragment implements View.OnClickListener{
                     resultado = Math.pow(ladoCubo,3);
                 }
 
-                //Se muestra el resultado con 4 decimales de precision
-                tvResultadoCubo.setText( String.format( "%,.4f", resultado) );
+                //Se muestra el resultado con 3 decimales de precision
+                tvResultadoCubo.setText( String.format( "%,.3f", resultado) );
             }catch (Exception e){
+                //Se borra el resultado anterior si lo hubiese para que no induzca a error
+                tvResultadoCubo.setText("");
                 toastPersonalizado("El lado del cubo debe ser un número mayor que 0");
             }
 
@@ -157,9 +161,11 @@ public class AreasVolumenes extends Fragment implements View.OnClickListener{
                     resultado = anchoParalelepipedo * largoParalelepipedo * altoParalelepipedo;
                 }
 
-                //Se muestra el resultado con 4 decimales de precision
-                tvResultadoParalelepipedo.setText( String.format( "%,.4f", resultado) );
+                //Se muestra el resultado con 3 decimales de precision
+                tvResultadoParalelepipedo.setText( String.format( "%,.3f", resultado) );
             }catch (Exception e){
+                //Se borra el resultado anterior si lo hubiese para que no induzca a error
+                tvResultadoParalelepipedo.setText("");
                 toastPersonalizado("Todas las medidas del paralelepipedo deben ser numeros mayores que 0");
             }
         }
