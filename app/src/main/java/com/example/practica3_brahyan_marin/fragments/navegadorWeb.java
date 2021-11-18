@@ -41,14 +41,13 @@ public class navegadorWeb extends Fragment {
 
         browser= (WebView) getView().findViewById(R.id.WebView);
         browser.getSettings().setJavaScriptEnabled(true);
-        browser.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                view.loadUrl(url);
-                return true;
-            }
-        });
+        browser.getSettings().setBuiltInZoomControls(true);
         // Cargamos la web
-        browser.loadUrl("https://es.wikipedia.org/wiki/Wikipedia:Portada");
+        browser.loadUrl("https://www.universoformulas.com/matematicas/geometria/");
+
+        
+
     }
+
+
 }
