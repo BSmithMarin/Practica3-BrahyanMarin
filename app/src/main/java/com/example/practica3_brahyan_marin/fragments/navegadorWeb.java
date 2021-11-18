@@ -1,5 +1,6 @@
 package com.example.practica3_brahyan_marin.fragments;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.activity.OnBackPressedCallback;
@@ -55,8 +56,7 @@ public class navegadorWeb extends Fragment {
         //Permitimos que se pueda hacer zoom con gestos y ocultamos los botones de zoom
         browser.getSettings().setBuiltInZoomControls(true);
         browser.getSettings().setDisplayZoomControls(false);
-        // Cargamos la web
-        browser.loadUrl(BASE_URL);
+
         // Callback ha realizar cuando pulsamos el boton de atras
         OnBackPressedCallback callback = new OnBackPressedCallback(true) {
             @Override
@@ -72,8 +72,9 @@ public class navegadorWeb extends Fragment {
             }
         };
         //Seteamos el callback anterior como accion a realizar si se pulsa el boton volver
-        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), callback);
+        requireActivity().getOnBackPressedDispatcher().addCallback(requireActivity(), callback);
+
+        // Cargamos la web
+        browser.loadUrl(BASE_URL);
     }
-
-
 }
