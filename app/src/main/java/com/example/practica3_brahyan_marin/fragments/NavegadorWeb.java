@@ -15,14 +15,14 @@ import androidx.fragment.app.Fragment;
 
 import com.example.practica3_brahyan_marin.R;
 
-public class navegadorWeb extends Fragment {
+public class NavegadorWeb extends Fragment {
 
     //Definicion del WebView
     WebView browser;
     //Constante que almacena la URL de la pagina que se mostrara siempre al princio
     private final String BASE_URL = "https://www.universoformulas.com/matematicas/geometria/";
 
-    public navegadorWeb() {
+    public NavegadorWeb() {
         // Required empty public constructor
     }
 

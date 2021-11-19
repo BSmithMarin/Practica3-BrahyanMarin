@@ -19,7 +19,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView2"
-            android:name="com.example.practica3_brahyan_marin.fragments.navegadorWeb"
+            android:name="com.example.practica3_brahyan_marin.fragments.NavegadorWeb"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"/>
